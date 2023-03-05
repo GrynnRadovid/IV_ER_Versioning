@@ -22,3 +22,4 @@ content = content.replace(bfv_match, bfv_update)
 
 with open("./SWVersion.c", "w") as f:
     f.write(content)
+    test
