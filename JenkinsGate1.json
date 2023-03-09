@@ -1,0 +1,16 @@
+{
+    "failfast" : "disable",
+    "steps":[
+        {
+        "timeout" : "2",
+        "node" : "BuildSlave_111",
+        "ignoreFail" : "False",
+        "type" : "build",
+        "variant" : "normal_build",
+        "artifactList" : "artifacts",
+        "bat" : "call .\\build_all.bat
+                exit $?
+                "
+        }
+    ]
+}
